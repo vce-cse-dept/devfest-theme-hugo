@@ -1,19 +1,18 @@
-
 .talk {
   margin: 2rem auto 0;
   max-width: var(--block-text-max-width);
 
   .complexity::before {
-    content: 'Niveau : ';
+    content: "Level : ";
   }
 
   .type::before {
-    content: 'Type : ';
+    content: "Type : ";
   }
 
   .type::after {
     font-weight: 100;
-    content: ' (' var(--duration, '') ' min.)';
+    content: " (" var(--duration, "") " min.)";
   }
 
   .speakers {
@@ -51,11 +50,8 @@
   }
 }
 
-
 .page.sessions {
-
   .talk {
-
     header {
       border-radius: var(--space-2);
       padding: var(--space-2);
@@ -91,12 +87,12 @@
 
       blockquote.twitter-tweet {
         border: thin solid var(--darken-2);
-        border-radius: .5em;
-        padding: .75em;
+        border-radius: 0.5em;
+        padding: 0.75em;
 
-         p  {
-           margin: 0;
-         }
+        p {
+          margin: 0;
+        }
       }
     }
 
@@ -122,7 +118,6 @@
       }
     }
 
-
     .speakers {
       //flex: 0 1 auto;
       float: right;
@@ -140,13 +135,14 @@
         transition: box-shadow var(--animation);
         border-radius: var(--space-2);
 
-        &:hover, &:focus {
-          box-shadow: var(--space-2) var(--space-2) var(--space-2) var(--darken-3);
+        &:hover,
+        &:focus {
+          box-shadow: var(--space-2) var(--space-2) var(--space-2)
+            var(--darken-3);
         }
 
         text-decoration: none;
         color: inherit;
-
       }
     }
 
@@ -164,17 +160,18 @@
         background: var(--primary);
         color: var(--primary-txt);
         font-size: 1.25em;
-        padding: .125em .75em;
+        padding: 0.125em 0.75em;
         border-radius: 1em;
-        &:focus, &:active , &:hover {
-          box-shadow: .0625em .0625em .125em var(--darken-3);
+        &:focus,
+        &:active,
+        &:hover {
+          box-shadow: 0.0625em 0.0625em 0.125em var(--darken-3);
         }
         svg {
           max-width: 2ch;
         }
       }
     }
-
   }
 }
 
